@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ActionSheetRoutingModule } from './action-sheet-routing.module';
-import { ActionSheetComponent } from './action-sheet.component';
+import { ButtonRoutingModule } from './button-routing.module';
+import { ButtonComponent } from './button.component';
 import { IonicModule } from '@ionic/angular';
 import { ComponentsModule } from 'src/app/components/components.module';
 
 
 @NgModule({
   declarations: [
-    ActionSheetComponent
+    ButtonComponent
   ],
   imports: [
     CommonModule,
-    ActionSheetRoutingModule,
+    ButtonRoutingModule,
     IonicModule,
     ComponentsModule
   ]
 })
-export class ActionSheetModule { }
+export class ButtonModule { }

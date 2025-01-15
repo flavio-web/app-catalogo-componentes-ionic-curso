@@ -1,11 +1,14 @@
 <ion-header class="ion-no-border" translucent>
   <ion-toolbar>
-   <!--  <ion-buttons slot="start">
-      <ion-back-button defaultHref="/" text="Regresar" color="primary" mode="ios"></ion-back-button>
-    </ion-buttons> -->
-    <ion-title class="ion-text-capitalize">TITULO DEL COMPONENTE</ion-title>
     <ion-buttons slot="start">
-      <ion-menu-button autoHide="false"></ion-menu-button>
+      <ion-back-button defaultHref="/" text="Regresar" color="primary"></ion-back-button>
+      <ion-menu-button autoHide="true"></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-capitalize">{{ title }}</ion-title>
+    <ion-buttons slot="end" *ngIf="avatar.length > 0">
+      <ion-avatar>
+        <ion-img [src]="avatar"></ion-img>
+      </ion-avatar>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>

@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ActionSheetRoutingModule } from './action-sheet-routing.module';
-import { ActionSheetComponent } from './action-sheet.component';
+import { AvatarRoutingModule } from './avatar-routing.module';
+import { AvatarComponent } from './avatar.component';
 import { IonicModule } from '@ionic/angular';
 import { ComponentsModule } from 'src/app/components/components.module';
 
 
 @NgModule({
   declarations: [
-    ActionSheetComponent
+    AvatarComponent
   ],
   imports: [
     CommonModule,
-    ActionSheetRoutingModule,
+    AvatarRoutingModule,
     IonicModule,
     ComponentsModule
   ]
 })
-export class ActionSheetModule { }
+export class AvatarModule { }

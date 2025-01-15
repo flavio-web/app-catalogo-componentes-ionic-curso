@@ -1,0 +1,19 @@
+<app-header [title]="'Avatar'" [avatar]="avatar" ></app-header>
+
+<ion-content>
+
+  <ion-chip color="primary" outline="true">
+    <ion-avatar>
+      <ion-img [src]="avatar"></ion-img>
+    </ion-avatar>
+    <ion-label>Usuario</ion-label>
+  </ion-chip>
+
+  <ion-item>
+    <ion-avatar slot="start">
+      <ion-img [src]="avatar"></ion-img>
+    </ion-avatar>
+    <ion-label>Usuario Item</ion-label>
+  </ion-item>
+
+</ion-content>

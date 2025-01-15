@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ActionSheetRoutingModule } from './action-sheet-routing.module';
-import { ActionSheetComponent } from './action-sheet.component';
+import { RefreshRoutingModule } from './refresh-routing.module';
+import { RefreshComponent } from './refresh.component';
 import { IonicModule } from '@ionic/angular';
 import { ComponentsModule } from 'src/app/components/components.module';
 
 
 @NgModule({
   declarations: [
-    ActionSheetComponent
+    RefreshComponent
   ],
   imports: [
     CommonModule,
-    ActionSheetRoutingModule,
+    RefreshRoutingModule,
     IonicModule,
     ComponentsModule
   ]
 })
-export class ActionSheetModule { }
+export class RefreshModule { }
