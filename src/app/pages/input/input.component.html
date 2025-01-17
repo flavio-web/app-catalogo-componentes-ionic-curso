@@ -1,0 +1,75 @@
+<app-header [title]="'Input'" />
+
+<ion-content color="light" class="ion-padding">
+
+  <h3>Input default</h3>
+  <ion-input></ion-input>
+
+  <h3>Input Value</h3>
+  <ion-input value="Ionic"></ion-input>
+
+  <h3>Input Placeholder</h3>
+  <ion-input placeholder="Ingrese su nombre" ></ion-input>
+
+  <h3>Input Button clear</h3>
+  <ion-input clearInput value="Maria" ></ion-input>
+
+  <h3>Input Number</h3>
+  <ion-input type="number" value="1994" ></ion-input>
+
+  <h3>Input Disabled</h3>
+  <ion-input value="Disabled" disabled></ion-input>
+
+  <h3>Input Readonly</h3>
+  <ion-input value="Readonly" readonly></ion-input>
+
+  <!--input label -->
+  <ion-item>
+    <ion-label>Default Label</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Floating Label</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="fixed">Fixed Label</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Stacked Label</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <!-- input search-->
+  <ion-searchbar value="ionic angular"></ion-searchbar>
+
+  <!--form-->
+  <h3>Formulario</h3>
+  <form #formulario="ngForm" (ngSubmit)="onSubmit()">
+    <ion-list-header>
+      <ion-label>Formulario valido: {{ formulario.valid }}</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Emial:</ion-label>
+      <ion-input type="email" [(ngModel)]="email" name="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Password:</ion-label>
+      <ion-input type="password" [(ngModel)]="password" name="password" required></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" type="submit" [disabled]="formulario.invalid">Login</ion-button>
+  </form>
+
+  <pre>Email: {{ email }}</pre>
+  <pre>Password: {{ password }}</pre>
+
+  <!-- <div style="height: 150px"></div> -->
+
+</ion-content>

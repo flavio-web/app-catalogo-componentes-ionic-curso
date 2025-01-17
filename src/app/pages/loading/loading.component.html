@@ -1,0 +1,8 @@
+<app-header [title]="'Loading'"></app-header>
+
+<ion-content>
+  <ion-button id="open-loading">Show Loading</ion-button>
+  <ion-loading trigger="open-loading" message="Dismissing after 3 seconds..." duration="3000"></ion-loading>
+
+  <ion-button (click)="showLoading()" expand="block" color="warning" >Loading</ion-button>
+</ion-content>

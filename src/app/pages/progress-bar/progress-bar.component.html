@@ -1,0 +1,26 @@
+<app-header [title]="'Progress Bar'" />
+
+<ion-content class="ion-padding">
+
+  <ion-item>
+    <ion-label>{{ porcentaje * 100}} %</ion-label>
+  </ion-item>
+  <ion-progress-bar type="determinate" color="primary" [value]="porcentaje" ></ion-progress-bar>
+
+  <ion-list>
+    <ion-item>
+      <ion-range
+        min="20"
+        max="100"
+        pin="true"
+        ticks="true"
+        value="0"
+        debounce="25"
+        (ionChange)="rangeChange($event)"
+      >
+        <ion-icon slot="end" name="sunny"></ion-icon>
+      </ion-range>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

@@ -33,5 +33,35 @@
     "icon": "refresh-circle-outline",
     "name": "Refresh",
     "redirecTo": "/refresh"
+  },
+  {
+    "icon": "hammer-outline",
+    "name": "Input",
+    "redirecTo": "/input"
+  },
+  {
+    "icon": "phone-portrait-outline",
+    "name": "Modal",
+    "redirecTo": "/modal"
+  },
+  {
+    "icon": "reload-outline",
+    "name": "Loading",
+    "redirecTo": "/loading"
+  },
+  {
+    "icon": "code-working-outline",
+    "name": "Progress Bar",
+    "redirecTo": "/progress-bar"
+  },
+  {
+    "icon": "hourglass-outline",
+    "name": "Skeleton",
+    "redirecTo": "/skeleton"
+  },
+  {
+    "icon": "infinite-outline",
+    "name": "Infinite Scroll",
+    "redirecTo": "/infinite-scroll"
   }
 ]

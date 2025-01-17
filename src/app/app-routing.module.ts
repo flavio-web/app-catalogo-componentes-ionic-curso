@@ -31,6 +31,30 @@ const routes: Routes = [
     loadChildren: () => import('./pages/refresh/refresh.module').then( m => m.RefreshModule )
   },
   {
+    path: 'input',
+    loadChildren: () => import('./pages/input/input.module').then( m => m.InputModule )
+  },
+  {
+    path: 'modal',
+    loadChildren: () => import('./pages/modal/modal.module').then( m => m.ModalModule )
+  },
+  {
+    path: 'loading',
+    loadChildren: () => import('./pages/loading/loading.module').then( m => m.LoadingModule )
+  },
+  {
+    path: 'progress-bar',
+    loadChildren: () => import('./pages/progress-bar/progress-bar.module').then( m => m.ProgressBarModule )
+  },
+  {
+    path: 'skeleton',
+    loadChildren: () => import('./pages/skeleton/skeleton.module').then( m => m.SkeletonModule )
+  },
+  {
+    path: 'infinite-scroll',
+    loadChildren: () => import('./pages/infinite-scroll/infinite-scroll.module').then( m => m.InfiniteScrollModule )
+  },
+  {
     path: '',
     redirectTo: 'action-sheet',
     pathMatch: 'full'
